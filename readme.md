@@ -22,5 +22,11 @@ Install the following software on your local machine:
 - From the project's root folder in the terminal run the following command:
 ```php artisan migrate```
 
+### Seeding the db
+- After running the migrations, from the project's root folder in the terminal run the following command:
+```php artisan db:seed```, it will create 10 users with the passwords ```secret``` and the mail addresses 'user0@example.com' 
+to 'user9@example.com'. each subsequent call for this command will create extra 10 users with the email address numeric suffix 
+starting after the last email in the previous batch.
+
 ## License
 This is only a sample application, it is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
