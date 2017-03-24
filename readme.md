@@ -15,5 +15,12 @@ Install the following software on your local machine:
 ```vagrant up```
 - access the project at ```http://chat_with_laravel.app``` in your browser
 
+### Running the migration
+- Copy the '.env.example' file in the root of the project to a '.env' file.
+- Edit the 'DB_USERNAME' and 'DB_PASSWORD' fields with your db login.
+- Create a database with the name 'homestead' on your local db server.
+- From the project's root folder in the terminal run the following command:
+```php artisan migrate```
+
 ## License
 This is only a sample application, it is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
