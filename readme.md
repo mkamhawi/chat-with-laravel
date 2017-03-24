@@ -2,7 +2,7 @@
 Example of a chat application built on Laravel.
 
 ### Running the app (For mac and linux)
-Instal the following software on your local machine:
+Install the following software on your local machine:
 - [VirtualBox 5.1](https://www.virtualbox.org/wiki/Downloads)
 - [Vagrant](https://www.vagrantup.com/downloads.html)
 - add the laravel/homestead box to your Vagrant installation using the following command in your terminal:
