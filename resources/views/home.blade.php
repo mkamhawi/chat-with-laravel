@@ -8,7 +8,7 @@
                 <div class="panel-heading">Users</div>
                 <div class="panel-body">
                     @foreach($users as $user)
-                        <a href="#">
+                        <a href="conversation/{{ $user->conversations->first->id ? $user->conversations->first->id['id'] : 'create/' . $user->id }}">
                         <div class="row">
                             <div class="col-md-12">
                                 <h5 style="margin-left: 10px;">

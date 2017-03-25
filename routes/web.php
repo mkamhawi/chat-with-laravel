@@ -18,3 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('conversation/create/{recipientId}', 'ConversationController@create');
+
+Route::resource('conversation', 'ConversationController', ['only' => [
+    'show'
+]]);
+
+Route::resource('messages', 'MessageController', ['only' => [
+    'store'
+]]);
