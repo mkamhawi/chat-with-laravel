@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Chat with laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -46,7 +46,11 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 44px;
+            }
+
+            .sub-title {
+                font-size: 33px;
             }
 
             .links > a {
@@ -79,8 +83,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Chat with Laravel
                 </div>
+
+                <div class="sub-title m-b-md">
+                    A laravel example for a simple chat application
+                </div>
+
+                <p>
+                    After runing the migrations and seeding the db, login with an email address between 'user0@example.com'
+                    and 'user9@example.com', with the password 'secret'
+                </p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
