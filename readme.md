@@ -11,16 +11,17 @@ Install the following software on your local machine:
 ```php vendor/bin/homestead make```
 - edit your machine's hosts file located in ```/etc/hosts``` and add the following line to it:
 ```192.168.10.10   chat_with_laravel.app```
-- in the project's root directory, launch the Virtual Machine by running this command on the terminal:
+- in the project's root directory on your local machine, launch the Virtual Machine by running this command on the terminal:
 ```vagrant up```
 - access the project at ```http://chat_with_laravel.app``` in your browser
 
 ### Running the migration
 - Copy the '.env.example' file in the root of the project to a '.env' file.
 - Edit the 'DB_USERNAME' and 'DB_PASSWORD' fields with your db login.
-- Create a database with the name 'homestead' on your local db server.
-- From the project's root folder in the terminal run the following command:
-```php artisan migrate```
+- ssh into your vagrant vm by running the command ```ssh vagrant@127.0.0.1 -p 2222```, using password ```vagrant```
+- Create a database with the name 'homestead' on your vagrant db server.
+- From the project's root folder in the terminal run the following command: ```php artisan migrate``` 
+(The project's root folder on the vagrant machine is ```/home/vagrant/Code/chat-with-laravel```)
 
 ### Seeding the db
 - After running the migrations, from the project's root folder in the terminal run the following command:
