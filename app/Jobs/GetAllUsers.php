@@ -13,22 +13,20 @@ class GetAllUsers implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $users;
-
     /**
      * Create a new job instance.
-     * @param User $users
      */
-    public function __construct(User $users)
+    public function __construct()
     {
-        $this->users = $users;
     }
 
     /**
      * Execute the job.
+     * @param User $users
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
-    public function handle()
+    public function handle(User $users)
     {
-        return $this->users->all(['id', 'name', 'email']);
+        return $users->all(['id', 'name', 'email']);
     }
 }
